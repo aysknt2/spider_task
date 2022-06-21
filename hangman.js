@@ -1,4 +1,4 @@
-var famous cities = [
+var famous_cities = [
 	"python",
 	"javascript",
 	"mongodb",
@@ -56,7 +56,7 @@ function handleGuess(chosenLetter) {
 }
 
 function updateHangmanPicture() {
-  document.getElementById('hangmanPic').src = './images/' + mistakes + '.jpg';
+  document.getElementById('hangmanPic').src = './images/' + mistakes + '.PNG';
 }
 
 function checkIfGameWon() {
@@ -85,7 +85,7 @@ function updateMistakes() {
 function reset() {
   mistakes = 0;
   guessed = [];
-  document.getElementById('hangmanPic').src = './images/0.jpg';
+  document.getElementById('hangmanPic').src = './images/0.PNG';
 
   randomWord();
   guessedWord();
